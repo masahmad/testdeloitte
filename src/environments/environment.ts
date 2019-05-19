@@ -3,7 +3,31 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  formData: {
+    "items": {
+      "pens": 100,
+      "sharpeners": 32,
+      "pencils": 76,
+      "fish": 12,
+      "chicken": 13,
+      "veg": 43,
+      "chocolate": 4
+    },
+    "groups": {
+      "stationery": [
+        "pens",
+        "sharpeners",
+        "pencils"
+      ],
+      "food": [
+        "fish",
+        "chicken",
+        "veg",
+        "chocolate"
+      ]
+    }
+  }
 };
 
 /*

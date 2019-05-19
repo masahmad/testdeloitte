@@ -1,0 +1,25 @@
+
+<form [formGroup]="myform" novalidate>
+  <fieldset>
+    <div class="form-group">
+      <label>Stationary</label>
+      <input type="text" formControlName="stationery"
+             class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Food</label>
+      <input type="text" formControlName="food"
+             class="form-control">
+    </div>
+  </fieldset>
+<button type="submit" >submit</button>
+
+</form>
+
+<hr>
+<p class="text-warning">Form valid:{{myform.valid}}</p>
+<p class="text-warning">Stationery Errors: {{myform.get('stationery').errors|json}}</p>
+<p class="text-warning">Food Errors: {{myform.get('food').errors|json}}</p>
+<h2>Json data</h2>
+<pre>{{debugData | async |json}}</pre>
